@@ -1,20 +1,5 @@
 # Port-Mangement-Portal
 ## Hosting the Website on a local host
-Note: To run this program which contains a mail function we need the user(the server) to change the following:
-->Go to php folder in xampp and open php.ini
-	->search and find mail function and set the following parameters as such(if the lines are commented please remove the comment)
-	->https://php.net/smtp
-	   SMTP=smtp.gmail.com
-	  https://php.net/smtp-port
-	  smtp_port=587
-	->sendmail_from = rishithreddyaduma@gmail.com
-	->sendmail_path= "Insert location of sendmail.exe here"
-->Go to sendmail folder and open sendmail.ini
-	->change the following
-	-> smtp_server=smtp.gmail.com
-	->smtp_port=587
-	->auth_username=rishithreddyaduma@gmail.com
-	->auth_password=mmaqfprdbkaflkhj
 
 Please restart the Xampp servers and run signin.php first
 
@@ -28,7 +13,7 @@ Instead of creating separate files for the project's frontend and backend,we com
 
 ->welcome1.php : This file is where shipping companies gets directed to when they sign-in and here shipping
 		 comapanies/Ships can request dock allotment by providing their ship id and date of arrival of ship.
-		 Similarly they can request for their dock departure.
+		 Similarly they can request for their dock dparture.
 
 ->viewships.php: This file is where shipping companies gets directed after clicking viewships in welcome1.php page.
 		 In this page, the details of the ships were shown in a table.
@@ -45,7 +30,21 @@ Instead of creating separate files for the project's frontend and backend,we com
 ->dockdet.php  : This file is where port authorities gets directed to, when they click dockdetails in 
 		 navigation bar in welcome3.php page.Here in this page, details of the ships whichever occupied the 
 		 docks is shown in a table.
-
+Note: To run this program which contains a mail function we need the user(the server) to change the following:
+->Go to php folder in xampp and open php.ini
+	->search and find mail function and set the following parameters as such(if the lines are commented please remove the comment)
+	->https://php.net/smtp
+	   SMTP=smtp.gmail.com
+	  https://php.net/smtp-port
+	  smtp_port=587
+	->sendmail_from = *Your email here*
+	->sendmail_path= "Insert location of sendmail.exe here"
+->Go to sendmail folder and open sendmail.ini
+	->change the following
+	-> smtp_server=smtp.gmail.com
+	->smtp_port=587
+	->auth_username=*Your email here*
+	->auth_password=*Auth code for the gmail*
 ->style.css    : This is the only frontend part which was written as a separate file inorder to be accessed by all the
 		 PHP files, eventhough most of the PHP files had their own part of minute css.
 
