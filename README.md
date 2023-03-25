@@ -30,6 +30,8 @@ Instead of creating separate files for the project's frontend and backend,we com
 ->dockdet.php  : This file is where port authorities gets directed to, when they click dockdetails in 
 		 navigation bar in welcome3.php page.Here in this page, details of the ships whichever occupied the 
 		 docks is shown in a table.
+		 
+		 
 Note: To run this program which contains a mail function we need the user(the server) to change the following:
 ->Go to php folder in xampp and open php.ini
 	->search and find mail function and set the following parameters as such(if the lines are commented please remove the comment)
